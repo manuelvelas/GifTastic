@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Favorite Movies</title>
+  <title>Sports Gifts</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ee1679dbc5.js"></script>
+
   <style type="text/css">
     button,
     div,
@@ -19,23 +22,71 @@
         display: flex;
         flex-wrap: wrap;
     }
+    .main{
+        width: 100%;
+        height: 200px;
+        background-color: #36486b;
+        position: relative;
+        top: 0
+    }
+    #titulo{
+        font-size: 42px;
+        /* text-align: center;
+        margin: 50px auto;
+        padding: 20px; */
+        font-family: 'Raleway', sans-serif;
+        color: white;
+        position: absolute;
+        /* margin: 0; */
+
+        top: 25%;
+        left: 30%;
+        display: inline-block;
+
+
+    }
+    .wrapper{
+        width: 940px;
+        align-content: center;
+    }
+    .movie{
+        font-size: 24px;
+        color: white;
+        background-color: #36486b;
+
+    }
+    #add-movie{
+        color: white;
+        background-color: #36486b;
+        font-size: 24px;
+    }
+    #movie-input{
+        font-size: 24px;
+
+    }
+    label{
+        font-size: 24px;
+    }
+
   </style>
 </head>
 
 <body>
 
   <div class="container">
-    <h1>Movie Search</h1>
-
+    <div class="main">
+        <h1 id="titulo"><i class="fas fa-futbol"></i>Sports Gifts<i class="fas fa-football-ball"></i></h1>
+    </div>
+    <div class="wrapper">
     <!-- Rendered buttons will get dumped here  -->
     <div id="buttons-view"></div>
 
     <form id="movie-form">
-      <label for="movie-input">Add a Movie, Yo!</label>
+      <label for="movie-input">Add a Sport</label>
       <input type="text" id="movie-input"><br>
 
       <!-- Button triggers new movie to be added -->
-      <input id="add-movie" type="submit" value="Add a Movie, Yo!">
+      <input id="add-movie" type="submit" value="Add a Sport Gift!">
     </form>
 
     <!-- Movies will get dumped Here -->
@@ -164,6 +215,7 @@
       
 
     </script>
+    </div>
   </div>
 </body>
 
